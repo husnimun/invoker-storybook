@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
 import { boolean, select } from "@storybook/addon-knobs";
 
-import Button, { Button as ButtonComponent } from "./Button";
+import Button, { Button as UndecoratedButton } from "./Button";
 import { types } from "../__private/withTypeProps";
 import { sizes } from "../__private/withSizeProps";
 
@@ -13,7 +13,7 @@ storiesOf("Button", module)
   .addDecorator(
     withInfo({
       inline: true,
-      propTables: [ButtonComponent],
+      propTables: [UndecoratedButton],
       propTablesExclude: [Button]
     })
   )
