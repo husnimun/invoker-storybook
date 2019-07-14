@@ -1,0 +1,227 @@
+/*
+  Colors tokens
+*/
+
+// Main Brand Colors
+// Brand--Sea Colors
+$brand-sea-100            : #37A4A0;
+$brand-sea-200            : #008380;
+$brand-sea-300            : #00514F;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-sea-10             : rgba(0, 131, 128, .1);
+$brand-sea-20             : rgba(0, 131, 128, .2);
+$brand-sea-30             : rgba(0, 131, 128, .3);
+$brand-sea-40             : rgba(0, 131, 128, .4);
+$brand-sea-50             : rgba(0, 131, 128, .5);
+$brand-sea-60             : rgba(0, 131, 128, .6);
+$brand-sea-70             : rgba(0, 131, 128, .7);
+$brand-sea-80             : rgba(0, 131, 128, .8);
+$brand-sea-90             : rgba(0, 131, 128, .9);
+
+// Brand--Jeans Colors
+$brand-jeans-100          : #5773C2; // Default for large text
+$brand-jeans-200          : #3F46AD; // Default for small text
+$brand-jeans-300          : #182385; // Hover and tap
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-jeans-10           : rgba(63, 70, 173, .1);
+$brand-jeans-20           : rgba(63, 70, 173, .2);
+$brand-jeans-30           : rgba(63, 70, 173, .3);
+$brand-jeans-40           : rgba(63, 70, 173, .4);
+$brand-jeans-50           : rgba(63, 70, 173, .5);
+$brand-jeans-60           : rgba(63, 70, 173, .6);
+$brand-jeans-70           : rgba(63, 70, 173, .7);
+$brand-jeans-80           : rgba(63, 70, 173, .8);
+$brand-jeans-90           : rgba(63, 70, 173, .9);
+
+// Brand--Scarlet colors
+$brand-scarlet-100        : #FD5C63; // Default for large text
+$brand-scarlet-200        : #D43242; // Default for small text
+$brand-scarlet-300        : #9A202C; // Hover and tap
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-scarlet-10         : rgba(237, 0, 1, .1);
+$brand-scarlet-20         : rgba(237, 0, 1, .2);
+$brand-scarlet-30         : rgba(237, 0, 1, .3);
+$brand-scarlet-40         : rgba(237, 0, 1, .4);
+$brand-scarlet-50         : rgba(237, 0, 1, .5);
+$brand-scarlet-60         : rgba(237, 0, 1, .6);
+$brand-scarlet-70         : rgba(237, 0, 1, .7);
+$brand-scarlet-80         : rgba(237, 0, 1, .8);
+$brand-scarlet-90         : rgba(237, 0, 1, .9);
+
+// Brand--Sage colors
+$brand-sage-100           : #56A472;
+$brand-sage-200           : #2C864C;
+$brand-sage-300           : #1B512E;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-sage-10            : rgba(44, 134, 76, .1);
+$brand-sage-20            : rgba(44, 134, 76, .2);
+$brand-sage-30            : rgba(44, 134, 76, .3);
+$brand-sage-40            : rgba(44, 134, 76, .4);
+$brand-sage-50            : rgba(44, 134, 76, .5);
+$brand-sage-60            : rgba(44, 134, 76, .6);
+$brand-sage-70            : rgba(44, 134, 76, .7);
+$brand-sage-80            : rgba(44, 134, 76, .8);
+$brand-sage-90            : rgba(44, 134, 76, .9);
+
+// Brand--Plum Colors
+$brand-plum-100           : #A18DAD;
+$brand-plum-200           : #866D96;
+$brand-plum-300           : #51425B;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-plum-10            : rgba(134, 109, 150, .1);
+$brand-plum-20            : rgba(134, 109, 150, .2);
+$brand-plum-30            : rgba(134, 109, 150, .3);
+$brand-plum-40            : rgba(134, 109, 150, .4);
+$brand-plum-50            : rgba(134, 109, 150, .5);
+$brand-plum-60            : rgba(134, 109, 150, .6);
+$brand-plum-70            : rgba(134, 109, 150, .7);
+$brand-plum-80            : rgba(134, 109, 150, .8);
+$brand-plum-90            : rgba(134, 109, 150, .9);
+
+// Brand--Sky Colors
+$brand-sky-100            : #4A9BDA;
+$brand-sky-200            : #267ABC;
+$brand-sky-300            : #184C75;
+// Lighter colors -- these colors have bad a11y, use only for background-colors.
+$brand-sky-10            : rgba(38, 122, 188, .1);
+$brand-sky-20            : rgba(38, 122, 188, .2);
+$brand-sky-30            : rgba(38, 122, 188, .3);
+$brand-sky-40            : rgba(38, 122, 188, .4);
+$brand-sky-50            : rgba(38, 122, 188, .5);
+$brand-sky-60            : rgba(38, 122, 188, .6);
+$brand-sky-70            : rgba(38, 122, 188, .7);
+$brand-sky-80            : rgba(38, 122, 188, .8);
+$brand-sky-90            : rgba(38, 122, 188, .9);
+
+
+// Brand--Primary Colors
+$brand-primary-100          : $brand-sea-100;
+$brand-primary-200          : $brand-sea-200;
+$brand-primary-300          : $brand-sea-300;
+
+$brand-primary-10           : $brand-sea-10;
+$brand-primary-20           : $brand-sea-20;
+$brand-primary-30           : $brand-sea-30;
+$brand-primary-40           : $brand-sea-40;
+$brand-primary-50           : $brand-sea-50;
+$brand-primary-60           : $brand-sea-60;
+$brand-primary-70           : $brand-sea-70;
+$brand-primary-80           : $brand-sea-80;
+$brand-primary-90           : $brand-sea-90;
+
+// Brand--Secondary colors
+$brand-secondary-100         : $brand-scarlet-100;
+$brand-secondary-200         : $brand-scarlet-200;
+$brand-secondary-300         : $brand-scarlet-300;
+
+$brand-secondary-10          : $brand-scarlet-10;
+$brand-secondary-20          : $brand-scarlet-20;
+$brand-secondary-30          : $brand-scarlet-30;
+$brand-secondary-40          : $brand-scarlet-40;
+$brand-secondary-50          : $brand-scarlet-50;
+$brand-secondary-60          : $brand-scarlet-60;
+$brand-secondary-70          : $brand-scarlet-70;
+$brand-secondary-80          : $brand-scarlet-80;
+$brand-secondary-90          : $brand-scarlet-90;
+
+// Dark
+// HEX
+$dark-hex-90                : #0F0F0F; // Heading
+$dark-hex-80                : #292929; // Heading and Body text in text-heavy page such as blog post
+$dark-hex-70                : #484848; // Body text
+$dark-hex-60                : #767676; // Caption and subtitle
+$dark-hex-50                : #8F8F8F;
+
+$dark-hex-40                : #CCCCCC;
+$dark-hex-30                : #E0E0E0;
+$dark-hex-20                : #EBEBEB;
+$dark-hex-10                : #F5F5F5;
+
+// ALPHA
+$dark-alpha-90              : rgba(0,0,0,.94);
+$dark-alpha-80              : rgba(0,0,0,.84);
+$dark-alpha-70              : rgba(0,0,0,.72);
+$dark-alpha-60              : rgba(0,0,0,.54);
+$dark-alpha-50              : rgba(0,0,0,.44);
+
+$dark-alpha-40              : rgba(0,0,0,.20);
+$dark-alpha-30              : rgba(0,0,0,.12);
+$dark-alpha-20              : rgba(0,0,0,.08);
+$dark-alpha-10              : rgba(0,0,0,.04);
+
+// Light
+// ALPHA
+$light-alpha-100            : rgba(255,255,255,1);
+$light-alpha-90             : rgba(255,255,255,.84);
+$light-alpha-80             : rgba(255,255,255,.71);
+$light-alpha-70             : rgba(255,255,255,.54);
+$light-alpha-60             : rgba(255,255,255,.40);
+$light-alpha-50             : rgba(255,255,255,.20);
+$light-alpha-40             : rgba(255,255,255,.16);
+$light-alpha-30             : rgba(255,255,255,.10);
+$light-alpha-20             : rgba(255,255,255,.06);
+$light-alpha-10             : rgba(255,255,255,.02);
+// HEX
+$light-hex-100              : #ffffff;
+$light-hex-90               : #dcdcdc;
+$light-hex-80               : #c0c0c0;
+$light-hex-70               : #9c9c9c;
+
+// Tone colors
+$tone-danger-100             : #FF603F; // Use for Danger Background or Large text
+$tone-danger-200             : #E42700; // Default for small text
+$tone-danger-300             : #940D00; // Hover, active, focus and tap
+
+$tone-warning-100            : #FFE380;
+$tone-warning-200            : #FFAB00;
+$tone-warning-300            : #FF8B00;
+
+$tone-success-100            : #57D9A3; // Use for success background
+$tone-success-200            : #00875A; // Default for small text
+$tone-success-300            : #006644; // Hover, active, focus and tap
+
+// Background Colors
+// Only use this colors for background
+// Primary White
+$bg-primary-white           : #ffffff;
+
+// ROSE
+$bg-rose-100                : #FCE7DD;
+$bg-rose-200                : #E3CDD1;
+$bg-rose-300                : #D8BAC0;
+// SCARLET
+$bg-scarlet-100             : #FFEAEE;
+$bg-scarlet-200             : #FFC4CF;
+$bg-scarlet-300             : #FFA2B3;
+// SAGE
+$bg-sage-100                : #E8F3EC;
+$bg-sage-200                : #CAD8B4;
+$bg-sage-300                : #B7CA9A;
+// SEA
+$bg-sea-100                 : #D7EFEE;
+$bg-sea-200                 : #A9DCD7;
+$bg-sea-300                 : #92D3CC;
+// PLUM
+$bg-plum-100                : #DFD8E3;
+$bg-plum-200                : #D4D0E3;
+$bg-plum-300                : #BEB8D5;
+// SKY
+$bg-sky-100                 : #E2EFF9;
+$bg-sky-200                 : #B7D7F0;
+$bg-sky-300                 : #91C2E8;
+// SAND
+$bg-sand-100                : #F6F1E4;
+$bg-sand-200                : #E0D0B7;
+$bg-sand-300                : #D8C4A5;
+// DUST
+$bg-dust-100                : #F7F7F5;
+$bg-dust-200                : #F0F0EE;
+$bg-dust-300                : #B7B7AD;
+// VERDANT
+$bg-verdant-100             : #E4FDEB;
+$bg-verdant-200             : #D9FCE3;
+$bg-verdant-300             : #A9EEBC;
+// BANANA
+$bg-banana-100              : #FFFDDD;
+$bg-banana-200              : #FFFBBB;
+$bg-banana-300              : #FFFE95;

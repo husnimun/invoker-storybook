@@ -1,0 +1,53 @@
+@import 'src/tokens';
+
+.root {
+  transform: translateY(0%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  will-change: transform;
+  background: $light-alpha-100;
+  border-top: 1px solid $dark-alpha-10;
+  box-shadow: 0px -1px 2px $dark-alpha-10;
+  position: fixed;
+  transition: all 0.36s;
+
+  @include screen(phone) {
+    display: block;
+  }
+  @include screen(tabPortrait) {
+    display: block;
+  }
+  @include screen(tabLandscape) {
+    display: block;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.scrolling {
+  transform: translateY(100%);
+  transition: all 0.8s;
+}
+
+.container {
+  composes: container from global;
+  min-height: 48px;
+  display: inline-flex;
+}
+
+.horizontal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vertical {
+  flex-direction: column;
+}

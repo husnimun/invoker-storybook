@@ -1,0 +1,86 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.dark {
+  composes: root;
+  border-color: $light-alpha-100;
+  &:focus,
+  &:active {
+    border-color: $brand-primary-200;
+    transition: all 0.28s;
+  }
+}
+
+.light {
+  composes: root;
+  border-color: $dark-alpha-20;
+  &:focus,
+  &:active {
+    border-color: $brand-primary-200;
+    transition: all 0.28s;
+  }
+}
+
+.stack {
+  display: block;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.critical {
+  border-color: $brand-secondary-200;
+  background: $brand-secondary-10;
+}
+
+.positive {
+  border-color: $brand-primary-200;
+  background: $brand-primary-10;
+}
+
+.small {
+  composes: root;
+  padding: 8px 11px;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+
+.normal {
+  composes: root;
+  padding: 11px;
+  font-size: $heading-5;
+  line-height: 24px;
+}
+
+.disabled {
+  user-select: none;
+  background: $dark-alpha-10;
+
+  &:focus,
+  &:active {
+    transition: all 0.3s;
+    border-color: $dark-alpha-20;
+    transition: all 0.28s;
+  }
+}
+
+.horizontal {
+  resize: horizontal;
+}
+
+.vertical {
+  resize: vertical;
+}
+
+.both {
+  resize: both;
+}

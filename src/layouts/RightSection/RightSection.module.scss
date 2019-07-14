@@ -1,0 +1,21 @@
+@import 'src/tokens';
+
+.root {
+  height: 100%;
+  overflow-y: scroll;
+  @include screen(phone) {
+    width: 0;
+  }
+  @include screen(tabPortrait) {
+    width: 0;
+  }
+  @include screen(tabLandscape) {
+    width: 25vw;
+  }
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,20 @@
+@import 'src/tokens';
+
+.root {
+  font-weight: 500;
+  display: block;
+  padding-top: $space-s;
+  color: $dark-alpha-60;
+}
+
+.neutral {
+  color: $dark-alpha-60;
+}
+
+.critical {
+  color: $tone-danger-100;
+}
+
+.positive {
+  color: $brand-primary-200;
+}

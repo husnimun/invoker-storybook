@@ -1,0 +1,75 @@
+@import 'src/tokens';
+
+.root {
+  margin-top: $space-sm;
+  margin-bottom: $space-sm;
+  display: block;
+  width: fit-content;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+}
+
+.input,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.label {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+
+.input + .label:before {
+  content: '';
+  background: transparent;
+  border: 2px solid $dark-alpha-50;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  margin-top: 1px;
+  // margin-left: 1px;
+  margin-right: 0px;
+  text-align: center;
+  top: calc(50%-10px);
+  left: 0;
+  box-sizing: border-box;
+}
+
+.input + .label:before {
+  border-radius: 50%;
+  border: 1px solid $dark-hex-30;
+  outline: 1px solid transparent;
+  position: absolute;
+}
+
+.input:checked + :before {
+  background: $brand-primary-200;
+  border: 1px solid $dark-hex-30;
+  box-shadow: inset 0px 0px 0px 6px $light-alpha-100;
+}
+
+.input:focus + .label:before,
+.input:active + .label:before {
+  border: 1px solid $brand-primary-200;
+}
+
+.input:checked + .label > .radio__text {
+  color: $dark-alpha-70;
+}

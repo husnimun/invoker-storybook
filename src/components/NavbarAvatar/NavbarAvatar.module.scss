@@ -1,0 +1,64 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  padding: 18px 0;
+  transition: all 0.36s cubic-bezier(0.8, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+    transition: all 0.28s cubic-bezier(0.8, 0, 0.2, 1);
+  }
+}
+
+.container {
+  width: 28px;
+  height: 28px;
+  box-shadow: 0px 0px 0px 2px $dark-alpha-30;
+  border-radius: $radius-xxl;
+}
+
+.menuContainer {
+  width: 320px;
+  padding: $space-inset-s;
+}
+
+.picture {
+  border-radius: $radius-xxl;
+}
+
+.popout {
+  transform: translate(16px, -16px);
+}
+
+.menu {
+  list-style: none;
+  padding: 11px 0;
+}
+
+.content {
+  // box-shadow: $shadow-s;
+}
+
+.link {
+  display: block;
+  padding: $space-horizontal-s;
+}
+
+.menuText {
+  color: $dark-alpha-70;
+  display: block;
+  font-weight: 500;
+  user-select: none;
+  transition: all 0.36s;
+
+  &:hover {
+    color: $dark-alpha-80;
+    transition: all 0.28s;
+  }
+}
+
+.divider {
+  padding-left: $space-s;
+  padding-right: $space-s;
+}

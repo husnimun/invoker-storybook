@@ -1,0 +1,23 @@
+{
+  "name": "@invoker/style-base",
+  "version": "1.0.0",
+  "description": "CSS to reset browsers default styles",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "invoker",
+    "base",
+    "css",
+    "reset",
+    "normalize",
+    "meridian.id",
+    "vasilenka"
+  ],
+  "author": "Ongki 'vasilenka' Herlambang",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+@import 'src/tokens';
+
+.root {
+  user-select: none;
+}
+
+.root input[type='checkbox'] {
+  opacity: 0;
+  cursor: pointer;
+}

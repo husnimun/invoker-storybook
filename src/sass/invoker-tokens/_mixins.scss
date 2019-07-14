@@ -1,0 +1,32 @@
+// Mixins
+@import './mixins/flexbox.scss';
+@import './mixins/media-queries.scss';
+@import './mixins/container.scss';
+@import './mixins/fit.scss';
+@import './mixins/grid.scss';
+@import './mixins/link-animation.scss';
+@import './mixins/text-crop.scss';
+@import './mixins/text-shadow.scss';
+@import './mixins/to-rem.scss';
+@import './mixins/type.scss';
+
+@function upperSize($number){
+    @return $number * 1.618
+};
+
+@function lowerSize($number) {
+    @return $number / 1.618
+};
+
+@mixin clearfix {
+  &::before {
+    display: table;
+    content: "";
+  }
+
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}

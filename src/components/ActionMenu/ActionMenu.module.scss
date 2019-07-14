@@ -1,0 +1,25 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  filter: saturate(0);
+  color: $brand-primary-200;
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.36s;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    filter: saturate(1);
+    transition: all 0.28s;
+  }
+}
+
+.active {
+  filter: saturate(1);
+}

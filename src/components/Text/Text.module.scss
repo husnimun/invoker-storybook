@@ -1,0 +1,236 @@
+@import 'src/tokens';
+
+.root {
+  font-family: $font-primary;
+}
+
+// Display Text
+.display1 {
+  font-size: $display-1;
+  line-height: $line-reset;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+.display2 {
+  font-size: $display-2;
+  line-height: $line-reset;
+  letter-spacing: -1.628px;
+  font-weight: 800;
+}
+.display3 {
+  font-size: $display-3;
+  line-height: $line-reset;
+  font-weight: $bold;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+
+// Heading Text
+.heading1 {
+  composes: root;
+  font-size: $heading-1;
+  line-height: 52px;
+  letter-spacing: -1.44px;
+  font-weight: $bold;
+}
+.heading2 {
+  composes: root;
+  font-size: $heading-2;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  font-weight: $bold;
+}
+.heading3 {
+  composes: root;
+  font-size: $heading-3;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  font-weight: $bold;
+}
+.heading4 {
+  composes: root;
+  font-size: $heading-4;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+  font-weight: $bold;
+}
+.heading4Alt {
+  composes: root;
+  font-size: $heading-4;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+  font-weight: $medium;
+}
+.heading5 {
+  composes: root;
+  font-size: $heading-5;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  font-weight: $medium;
+}
+.heading5Alt {
+  composes: root;
+  font-size: $heading-5;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  font-weight: $bold;
+}
+.heading6 {
+  composes: root;
+  font-size: $heading-6;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  font-weight: $medium;
+}
+.heading6Alt {
+  composes: root;
+  font-size: $heading-6;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  font-weight: $bold;
+}
+
+// Body Text
+.large {
+  composes: root;
+  font-size: $body-3;
+  line-height: 26px;
+  font-weight: $regular;
+}
+.medium {
+  composes: root;
+  font-size: $body-2;
+  line-height: 22px;
+  font-weight: $regular;
+}
+.small {
+  composes: root;
+  font-size: $body-1;
+  line-height: 18px;
+  font-weight: $regular;
+}
+
+// Captions
+.captionBold {
+  composes: root;
+  display: inline-block;
+  font-size: $caption-1;
+  font-weight: $medium;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.caption {
+  composes: root;
+  display: inline-block;
+  font-size: $caption-1;
+  font-weight: $regular;
+  line-height: 16px;
+}
+
+// Label
+.label {
+  composes: root;
+  color: $dark-alpha-70;
+  font-weight: 500;
+  margin: $space-stack-s;
+}
+
+.labelSmall {
+  composes: label;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+
+.labelMedium {
+  composes: label;
+  font-size: $heading-5;
+  line-height: 22px;
+}
+
+.message {
+  font-family: $font-primary;
+  font-size: $heading-5;
+  font-weight: $regular;
+  color: $dark-alpha-60;
+}
+
+.raw {
+  padding-bottom: 0;
+}
+
+.link {
+  cursor: pointer;
+  font-family: $font-primary;
+  color: $brand-primary-200;
+  text-decoration: none;
+  transition: all 0.32s;
+
+  &:hover {
+    transition: all 0.28s;
+    text-decoration: underline;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.breakWord {
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.truncate {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+.chevron {
+  margin-left: $space-s;
+  animation: chevronTransform 0.4s 1 cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@keyframes chevronTransform {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 4px;
+  }
+}
+
+.fancyLink {
+  font-family: $font-primary;
+  width: fit-content;
+  color: $brand-primary-200;
+  text-decoration: none;
+  background-image: linear-gradient(
+    180deg,
+    $brand-primary-200 30%,
+    $brand-primary-200 30%
+  );
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: all 0.12s;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 100% 1.5px;
+    text-shadow: textshadow($light-alpha-100);
+    text-decoration: underline;
+    color: $brand-primary-300;
+  }
+}

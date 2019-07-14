@@ -1,0 +1,23 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: $space-stack-ll;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('./rotate.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: $space-inline-sm;
+}
+
+.text {
+  color: $light-alpha-100;
+}

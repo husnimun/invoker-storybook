@@ -1,0 +1,27 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-horizontal-ml;
+}
+
+.menu {
+  padding: $space-vertical-ml;
+  display: block;
+  line-height: 16px;
+  transition: all 0.36s cubic-bezier(0.8, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+    transition: all 0.28s cubic-bezier(0.8, 0, 0.2, 1);
+  }
+}
+
+.active {
+  box-shadow: inset 0px -3px 0px 0px $brand-primary-200;
+}
+
+.item {
+  list-style: none;
+  line-height: 16px !important;
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+/*
+  TextSize tokens
+  Base: 1rem == 16px
+*/
+
+$radius-xxs         : rem(2px);
+$radius-xs          : rem(3px);
+$radius-s           : rem(6px);
+$radius-m           : rem(8px);
+$radius-l           : rem(12px);
+$radius-xxl         : rem(9999px);
+$radius-rounded     : rem(9999999px);
+
+$radius-bottom-xxs  : 0 0 $radius-xxs $radius-xxs;
+$radius-bottom-xs   : 0 0 $radius-xs $radius-xs;
+$radius-bottom-s    : 0 0 $radius-s $radius-s;
+$radius-bottom-m    : 0 0 $radius-m $radius-m;
+$radius-bottom-l    : 0 0 $radius-l $radius-l;
+
+$radius-top-xxs     : $radius-xxs $radius-xxs 0 0;
+$radius-top-xs      : $radius-xs $radius-xs 0 0;
+$radius-top-s       : $radius-s $radius-s 0 0;
+$radius-top-m       : $radius-m $radius-m 0 0;
+$radius-top-l       : $radius-l $radius-l 0 0;
+
+$radius-right-xxs   : 0 $radius-xxs $radius-xxs 0;
+$radius-right-xs    : 0 $radius-xs $radius-xs 0;
+$radius-right-s     : 0 $radius-s $radius-s 0;
+$radius-right-m     : 0 $radius-m $radius-m 0;
+$radius-right-l     : 0 $radius-l $radius-l 0;
+
+$radius-left-xxs    : $radius-xxs 0 0 $radius-xxs;
+$radius-left-xs     : $radius-xs 0 0 $radius-xs;
+$radius-left-s      : $radius-s 0 0 $radius-s;
+$radius-left-m      : $radius-m 0 0 $radius-m;
+$radius-left-l      : $radius-l 0 0 $radius-l;

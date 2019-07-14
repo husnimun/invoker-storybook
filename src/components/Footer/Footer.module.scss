@@ -1,0 +1,27 @@
+@import 'src/tokens';
+
+.container {
+
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include screen(phone) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabPortrait) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(tabLandscape) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktop) {
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: $space-ll;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  width: $fix-left-space;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  bottom: 0;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+}

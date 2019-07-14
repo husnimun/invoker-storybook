@@ -1,0 +1,195 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  border-style: solid;
+  letter-spacing: normal;
+  text-decoration: none;
+  border-radius: $radius-xs;
+  font-family: $font-primary;
+  font-weight: $medium;
+  transition: all 0.36s;
+}
+
+.stretch {
+  width: 100%;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 0.44;
+}
+
+// Button Sizes
+.small {
+  border-width: 1px;
+  padding: 6px 16px;
+  font-size: $heading-6;
+  line-height: 22px;
+}
+.smallAlt {
+  border-width: 2px;
+  padding: 5px 15px;
+  font-size: $heading-6;
+  line-height: 22px;
+}
+.regular {
+  border-width: 1px;
+  padding: 11px 23px;
+  font-size: $heading-5;
+  line-height: 24px;
+}
+.alt {
+  border-width: 2px;
+  padding: 10px 22px;
+  font-size: $heading-5;
+  line-height: 24px;
+}
+.large {
+  border-width: 1px;
+  padding: 15px 31px;
+  font-size: $heading-5;
+  line-height: 24px;
+}
+.largeAlt {
+  border-width: 2px;
+  padding: 14px 30px;
+  font-size: $heading-5;
+  line-height: 24px;
+}
+
+// Button Types
+.normal {
+  color: $dark-alpha-70;
+  border-color: $dark-hex-30;
+  background-color: $dark-hex-30;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}
+.ghost {
+  color: $dark-alpha-70;
+  border-color: $dark-alpha-50;
+  background-color: transparent;
+  &:active:not(.disabled),
+  &:focus:not(.disabled) {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}
+.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: $brand-primary-200;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}
+.primary {
+  background-color: $brand-primary-200;
+  border-color: transparent;
+  color: $light-alpha-100;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px $brand-primary-50;
+    transition: all 0.28s;
+  }
+}
+.primaryGhost {
+  background-color: transparent;
+  border-color: $brand-primary-200;
+  color: $brand-primary-200;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px $brand-primary-30;
+    transition: all 0.28s;
+  }
+}
+.primaryText {
+  background-color: transparent;
+  border-color: transparent;
+  color: $brand-primary-200;
+  &:hover {
+    background-color: $brand-primary-10;
+    transition: all 0.28s;
+  }
+  &:active,
+  &:focus {
+    background-color: $brand-primary-30;
+    transition: all 0.28s;
+  }
+}
+.secondary {
+  background-color: $brand-secondary-100;
+  border-color: $brand-secondary-100;
+  color: $light-alpha-100;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px $brand-secondary-50;
+    transition: all 0.28s;
+  }
+}
+.secondaryGhost {
+  background-color: transparent;
+  border-color: $brand-secondary-100;
+  color: $brand-secondary-100;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px $brand-secondary-50;
+    transition: all 0.28s;
+  }
+}
+.secondaryText {
+  background-color: transparent;
+  border-color: transparent;
+  color: $brand-secondary-100;
+  &:hover {
+    background-color: $brand-secondary-10;
+    transition: all 0.28s;
+  }
+  &:active,
+  &:focus {
+    color: $brand-secondary-200;
+    background-color: $brand-secondary-30;
+    transition: all 0.28s;
+  }
+}
+.light {
+  background-color: $light-alpha-100;
+  border-color: $light-alpha-100;
+  color: $dark-alpha-70;
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}
+.lightGhost {
+  background-color: transparent;
+  border-color: $light-alpha-100;
+  color: $light-alpha-100;
+  &:active:not(.disabled),
+  &:focus:not(.disabled) {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}
+.lightText {
+  background-color: transparent;
+  border-color: transparent;
+  color: $light-alpha-100;
+  &:active:not(.disabled),
+  &:focus:not(.disabled) {
+    box-shadow: 0px 0px 0px 2.5px currentColor;
+    transition: all 0.28s;
+  }
+}

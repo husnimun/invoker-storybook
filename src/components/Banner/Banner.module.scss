@@ -1,0 +1,29 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  padding: $space-vertical-m;
+  font-size: $heading-5;
+  text-align: center;
+  font-weight: 500;
+  z-index: 99;
+}
+
+.positive {
+  composes: root;
+  color: $dark-alpha-80;
+  background-color: $tone-success-100;
+}
+
+.warning {
+  composes: root;
+  color: $dark-alpha-80;
+  background-color: $tone-warning-100;
+}
+
+.critical {
+  composes: root;
+  color: $light-alpha-100;
+  background-color: $tone-danger-200;
+  font-weight: 500;
+}

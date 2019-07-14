@@ -1,0 +1,43 @@
+@import 'src/tokens';
+
+.normal {
+  @include container();
+}
+
+.narrow {
+  @include container-narrow();
+}
+
+.post {
+  @include container-post();
+}
+
+.bleed {
+  @include container-bleed();
+}
+
+.fixLeft {
+  margin-left: $fix-left-space;
+  padding-left: $space-ml;
+}
+
+.fixRight {
+  @include screen(smallPhone) {
+    margin-right: 0;
+  }
+  @include screen(phone) {
+    margin-right: 0;
+  }
+  @include screen(tablet) {
+    margin-right: 0;
+  }
+  @include screen(tabletLandscape) {
+    margin-right: $fix-right-space;
+  }
+  @include screen(desktop) {
+    margin-right: $fix-right-space;
+  }
+  @include screen(desktopWide) {
+    margin-right: $fix-right-space;
+  }
+}

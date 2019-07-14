@@ -1,0 +1,69 @@
+@mixin screen($range) {
+  @if $range == smallPhone {
+    @media (max-width: $max-mobile-small) {
+      @content;
+    }
+  } @else if $range == phone {
+    @media (min-width: $min-mobile) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: $min-tablet) {
+      @content;
+    }
+  } @else if $range == tabletLandscape {
+    @media (min-width: $min-tablet-landscape) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $min-desktop) {
+      @content;
+    }
+  } @else if $range == desktopWide {
+    @media (min-width: $min-desktop-wide) {
+      @content;
+    }
+  }
+}
+
+// Usage Example
+// .my-box {
+//   padding: 10px;
+
+//   @include screen(desktop) {
+//     padding: 20px;
+//   }
+// }
+
+// @mixin screen($range) {
+//   $phone-upper-boundary: 600px;
+//   $tablet-portrait-upper-boundary: 900px;
+//   $tablet-landscape-upper-boundary: 1224px;
+//   $desktop-upper-boundary: 1800px;
+
+//   @if $range == smallPhone {
+//     @media (max-width: $max-mobile-small) {
+//       @content;
+//     }
+//   } @else if $range == phone {
+//     @media (min-width: $min-mobile) {
+//       @content;
+//     }
+//   } @else if $range == tablet {
+//     @media (min-width: $min-tablet) {
+//       @content;
+//     }
+//   } @else if $range == tabLandscape {
+//     @media (min-width: $tablet-portrait-upper-boundary) {
+//       @content;
+//     }
+//   } @else if $range == desktop {
+//     @media (min-width: $tablet-landscape-upper-boundary) {
+//       @content;
+//     }
+//   } @else if $range == desktopWide {
+//     @media (min-width: $desktop-upper-boundary) {
+//       @content;
+//     }
+//   }
+// }

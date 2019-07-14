@@ -1,0 +1,82 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+}
+
+.normal {
+  height: 18px;
+  width: 18px;
+}
+
+.large {
+  height: 22px;
+  width: 22px;
+}
+
+.box {
+  outline: none;
+  appearance: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid $dark-alpha-30;
+}
+
+.box:checked ~ .checkmark {
+  border-color: $brand-primary-200;
+  background-color: $brand-primary-200;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.box:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  border: solid $light-alpha-100;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark.normal:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+}
+
+.checkmark.large:after {
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+}
+
+.hoverCheckmark {
+  background-color: $brand-primary-20;
+}
+
+.disabled {
+  border-color: $dark-alpha-10;
+  background-color: $dark-alpha-10;
+}
+
+.box:checked ~ .checkmark.disabled {
+  opacity: 0.37;
+}

@@ -1,0 +1,14 @@
+@import 'src/tokens';
+
+.root {
+  list-style: none;
+  background-color: #ffffff;
+  max-height: 320px;
+  overflow: scroll;
+  box-shadow: 0 16px 48px -12px rgba(26, 26, 29, 0.3);
+  border-radius: 0 0 4px 4px;
+}
+
+.root:not(:empty) {
+  padding: 12px 0px 0px;
+}

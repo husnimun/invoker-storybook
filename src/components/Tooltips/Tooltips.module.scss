@@ -1,0 +1,142 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+  width: max-content;
+}
+
+.container {
+  display: flex;
+}
+
+.containerLeft {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.containerRight {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.containerCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMiddle {
+  position: absolute;
+  top: 50%;
+  padding-left: 100%;
+}
+
+.tooltips {
+  align-self: center;
+  position: absolute;
+  z-index: 999999;
+}
+
+.tooltipsTop {
+  composes: tooltips;
+  padding-bottom: 6px;
+  bottom: calc(100% + 4px);
+}
+
+.tooltipsRight {
+  composes: tooltips;
+  padding-left: 6px;
+  left: calc(100% + 4px);
+}
+
+.tooltipsBottom {
+  composes: tooltips;
+  padding-top: 6px;
+  top: calc(100% + 4px);
+}
+
+.tooltipsLeft {
+  composes: tooltips;
+  padding-right: 6px;
+  right: calc(100% + 4px);
+}
+
+.tooltipsAlignTop {
+  top: 0;
+}
+
+.tooltipsAlignBottom {
+  bottom: 0;
+}
+
+.content {
+  width: max-content;
+  background: $dark-hex-80;
+  border-radius: 3px;
+  padding: $space-inset-sm;
+  box-shadow: $elevation-l;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.arrowPositionTop {
+  // composes: arrow;
+  border-width: 0px 6px 6px 6px;
+  border-bottom-color: $dark-hex-80;
+  top: 0px;
+}
+
+.arrowPositionRight {
+  // composes: arrow;
+  border-width: 6px 0px 6px 6px;
+  border-left-color: $dark-hex-80;
+  right: 0px;
+}
+
+.arrowPositionBottom {
+  // composes: arrow;
+  border-width: 6px 6px 0px 6px;
+  border-top-color: $dark-hex-80;
+  bottom: 0px;
+}
+
+.arrowPositionLeft {
+  // composes: arrow;
+  border-width: 6px 6px 6px 0px;
+  border-right-color: $dark-hex-80;
+}
+
+.arrowAlignLeft {
+  left: 12px;
+  margin-left: -6px;
+}
+
+.arrowAlignCenter {
+  left: 50%;
+  margin-left: -6px;
+}
+
+.arrowAlignRight {
+  right: 12px;
+  margin-right: -6px;
+}
+
+.arrowAlignMiddle {
+  top: calc(50% - 6px);
+  margin-left: -6px;
+}
+
+.arrowAlignTop {
+  top: 12px;
+  margin-left: -6px;
+}
+
+.arrowAlignBottom {
+  bottom: 12px;
+  margin-left: -6px;
+}

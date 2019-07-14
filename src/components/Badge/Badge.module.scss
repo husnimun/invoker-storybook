@@ -1,0 +1,44 @@
+@import 'src/tokens';
+
+.root {
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  min-width: 18px;
+}
+
+.primary {
+  color: $light-alpha-100;
+  background: $brand-primary-200;
+  border-color: $brand-primary-200;
+}
+
+.secondary {
+  color: $dark-alpha-70;
+  background: $dark-alpha-20;
+  border-color: transparent;
+}
+
+.small {
+  padding: 0 4px;
+}
+
+.large {
+  padding: 4px 7px;
+  white-space: nowrap;
+  border: none;
+}
+
+.text {
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.circle {
+  border-radius: 9999px;
+  min-height: 18px;
+}

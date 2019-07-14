@@ -1,0 +1,78 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  border-radius: 9999px;
+  display: flex;
+  outline: none;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.14);
+  border: 2px solid transparent;
+  animation: showButton 0.4s 1 cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@keyframes showButton {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+}
+
+.large {
+  width: 40px;
+  height: 40px;
+}
+
+.primary {
+  color: $light-alpha-100;
+  background: $brand-primary-200;
+}
+
+.primaryAlt {
+  color: $brand-primary-200;
+  background: $light-alpha-100;
+}
+
+.secondary {
+  color: $dark-alpha-70;
+  background: $light-alpha-100;
+  transition: all 0.36s;
+
+  &:hover {
+    color: $dark-alpha-80;
+    transition: all 0.28s;
+  }
+}
+
+.secondaryAlt {
+  color: $dark-alpha-70;
+  background: $light-alpha-100;
+}
+
+.transparentLight {
+  color: $light-alpha-70;
+  transition: all 0.36s;
+
+  &:hover {
+    color: $light-alpha-100;
+    transition: all 0.28s;
+  }
+}
+
+.transparentDark {
+  color: $dark-alpha-70;
+  transition: all 0.36s;
+
+  &:hover {
+    color: $dark-alpha-80;
+    transition: all 0.28s;
+  }
+}

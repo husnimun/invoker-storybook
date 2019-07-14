@@ -1,0 +1,149 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+  width: max-content;
+}
+
+.container {
+  display: flex;
+}
+
+.containerLeft {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.containerRight {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.containerCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMiddle {
+  position: absolute;
+  top: 50%;
+  padding-left: 100%;
+}
+
+.popout {
+  align-self: center;
+  position: absolute;
+  z-index: 999999;
+}
+
+.popoutTop {
+  composes: popout;
+  padding-bottom: 6px;
+  bottom: calc(100% + 4px);
+}
+
+.popoutRight {
+  composes: popout;
+  padding-left: 6px;
+  left: calc(100% + 4px);
+}
+
+.popoutBottom {
+  composes: popout;
+  padding-top: 6px;
+  top: calc(100% + 4px);
+}
+
+.popoutLeft {
+  composes: popout;
+  padding-right: 6px;
+  right: calc(100% + 4px);
+}
+
+.popoutAlignTop {
+  top: 0;
+}
+
+.popoutAlignBottom {
+  bottom: 0;
+}
+
+.content {
+  border: 1px solid $dark-alpha-30;
+  width: max-content;
+  background: $light-alpha-100;
+  border-radius: 3px;
+}
+
+.arrow {
+  z-index: 9999999;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-width: 1px;
+  border-style: solid;
+  background: $light-alpha-100;
+}
+
+.arrowPositionTop {
+  border-top-color: $dark-alpha-30;
+  border-left-color: $dark-alpha-30;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  top: 2px;
+}
+
+.arrowPositionRight {
+  border-right-color: $dark-alpha-30;
+  border-top-color: $dark-alpha-30;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  right: 2px;
+}
+
+.arrowPositionBottom {
+  border-right-color: $dark-alpha-30;
+  border-bottom-color: $dark-alpha-30;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  bottom: 2px;
+}
+
+.arrowPositionLeft {
+  border-bottom-color: $dark-alpha-30;
+  border-left-color: $dark-alpha-30;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  left: 8px;
+}
+
+.arrowAlignLeft {
+  left: 16px;
+  margin-left: -6px;
+}
+
+.arrowAlignCenter {
+  left: 50%;
+  margin-left: -6px;
+}
+
+.arrowAlignRight {
+  right: 16px;
+  margin-right: -6px;
+}
+
+.arrowAlignMiddle {
+  top: calc(50% - 6px);
+  margin-left: -6px;
+}
+
+.arrowAlignTop {
+  top: 12px;
+  margin-left: -6px;
+}
+
+.arrowAlignBottom {
+  bottom: 12px;
+  margin-left: -6px;
+}

@@ -1,0 +1,95 @@
+@import 'src/tokens';
+
+.root {
+  font-family: $font-secondary;
+}
+
+.text {
+  font-family: $font-primary;
+}
+
+.paragraph {
+  composes: text;
+  color: $dark-alpha-70;
+
+  &:not(:last-child) {
+    margin-bottom: $space-l;
+  }
+}
+
+.heading {
+  font-family: $font-primary;
+  color: $dark-alpha-70;
+}
+
+.heading1 {
+  composes: heading;
+  margin-top: $space-ll;
+  margin-bottom: $space-ml;
+}
+
+.heading2 {
+  composes: heading;
+  margin-top: $space-ll;
+  margin-bottom: $space-ml;
+}
+
+.heading3 {
+  composes: heading;
+  margin-top: $space-l;
+  margin-bottom: $space-m;
+}
+
+.heading4 {
+  composes: heading;
+  margin-top: $space-ml;
+  margin-bottom: $space-sm;
+}
+
+.heading5 {
+  composes: heading;
+  margin-top: $space-ml;
+  margin-bottom: $space-sm;
+}
+
+.heading6 {
+  composes: heading;
+  margin-top: $space-ml;
+  margin-bottom: $space-sm;
+}
+
+.link {
+  color: $brand-secondary-100;
+}
+
+.listContainer {
+  list-style: disc;
+  padding-left: $space-ml;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+  margin-bottom: $space-ml;
+}
+
+.oListContainer {
+  list-style: decimal;
+  padding-left: $space-ml;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+  margin-bottom: $space-ml;
+}
+
+.listItem {
+  composes: text;
+  padding-top: $space-s;
+  padding-bottom: $space-s;
+  padding-left: $space-ml;
+}
+
+.blockImage {
+  padding-top: $space-ml;
+  padding-bottom: $space-ml;
+}
+
+.image {
+  width: 100%;
+}

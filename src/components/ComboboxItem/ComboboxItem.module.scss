@@ -1,0 +1,15 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-inset-m;
+  color: $dark-alpha-70;
+}
+
+.highlighted {
+  background: $dark-alpha-10;
+}
+
+.selected {
+  font-weight: 500;
+  color: $dark-alpha-80;
+}

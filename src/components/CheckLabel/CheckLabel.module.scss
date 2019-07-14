@@ -1,0 +1,9 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+}
+
+.disabled {
+  color: $dark-alpha-50;
+}

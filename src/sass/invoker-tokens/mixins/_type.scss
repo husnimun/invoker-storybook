@@ -1,0 +1,131 @@
+// Display Text
+@mixin display1() {
+  font-size: $display-1;
+  line-height: $line-reset;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+@mixin display2() {
+  font-size: $display-2;
+  line-height: $line-reset;
+  letter-spacing: -1.628px;
+  font-weight: 800;
+}
+@mixin display3() {
+  font-size: $display-3;
+  line-height: $line-reset;
+  font-weight: $bold;
+  letter-spacing: -1.44px;
+  font-weight: 800;
+}
+
+// Heading Text
+@mixin heading1() {
+  color: $dark-alpha-80;
+  font-size: $heading-1;
+  line-height: 52px;
+  letter-spacing: -1.44px;
+  font-weight: $bold;
+}
+@mixin heading2() {
+  color: $dark-alpha-80;
+  font-size: $heading-2;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  font-weight: $bold;
+}
+@mixin heading3() {
+  color: $dark-alpha-80;
+  font-size: $heading-3;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  font-weight: $bold;
+}
+@mixin heading4() {
+  color: $dark-alpha-80;
+  font-size: $heading-4;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+  font-weight: $bold;
+}
+@mixin heading4Alt() {
+  color: $dark-alpha-80;
+  font-size: $heading-4;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+  font-weight: $medium;
+}
+@mixin heading5() {
+  color: $dark-alpha-80;
+  font-size: $heading-5;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  font-weight: $medium;
+}
+@mixin heading5Alt() {
+  color: $dark-alpha-80;
+  font-size: $heading-5;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+  font-weight: $bold;
+}
+@mixin heading6() {
+  color: $dark-alpha-80;
+  font-size: $heading-6;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  font-weight: $medium;
+}
+@mixin heading6Alt() {
+  color: $dark-alpha-80;
+  font-size: $heading-6;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  font-weight: $bold;
+}
+
+// Body Text
+@mixin large() {
+  font-size: $body-3;
+  line-height: 26px;
+  font-weight: $regular;
+}
+@mixin medium() {
+  font-size: $body-2;
+  line-height: 22px;
+  font-weight: $regular;
+}
+@mixin small() {
+  font-size: $body-1;
+  line-height: 18px;
+  font-weight: $regular;
+}
+
+// Captions
+@mixin captionBold() {
+  font-size: $caption-1;
+  font-weight: $medium;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+@mixin caption() {
+  font-size: $caption-1;
+  font-weight: $regular;
+  line-height: 16px;
+}
+
+// Label
+@mixin labelSmall() {
+  color: $dark-alpha-70;
+  font-weight: $medium;
+  margin: $space-stack-s;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+@mixin labelMedium() {
+  color: $dark-alpha-70;
+  font-weight: $medium;
+  margin: $space-stack-s;
+  font-size: $heading-5;
+  line-height: 22px;
+}

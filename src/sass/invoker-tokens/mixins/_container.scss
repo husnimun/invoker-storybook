@@ -1,0 +1,114 @@
+
+@mixin container() {
+  flex-grow: 1;
+  margin: 0 auto;
+
+  @include screen(smallPhone) {
+    max-width: $page-width + $container-gutter-mobile-small;
+    padding-left: $container-gutter-mobile-small;
+    padding-right: $container-gutter-mobile-small;
+  }
+  @include screen(phone) {
+    max-width: $page-width + $container-gutter-mobile * 2;
+    padding-left: $container-gutter-mobile;
+    padding-right: $container-gutter-mobile;
+  }
+  @include screen(tablet) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(desktop) {
+    padding-left: $container-gutter-desktop;
+    padding-right: $container-gutter-desktop;
+    max-width: $page-width + $container-gutter-desktop * 2;
+  }
+  @include screen(desktopWide) {
+    padding-left: $container-gutter-desktop-wide;
+    padding-right: $container-gutter-desktop-wide;
+    max-width: $page-width + $container-gutter-desktop-wide * 2;
+  }
+}
+
+@mixin container-narrow {
+  flex-grow: 1;
+  margin: 0 auto;
+
+  @include screen(smallPhone) {
+    max-width: $page-width + $container-gutter-mobile-small;
+    padding-left: $container-gutter-mobile-small;
+    padding-right: $container-gutter-mobile-small;
+  }
+  @include screen(phone) {
+    max-width: $page-width + $container-gutter-mobile * 2;
+    padding-left: $container-gutter-mobile;
+    padding-right: $container-gutter-mobile;
+  }
+  @include screen(tablet) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(desktop) {
+    padding-left: $container-gutter-desktop;
+    padding-right: $container-gutter-desktop;
+    max-width: $page-narrow;
+  }
+  @include screen(desktopWide) {
+    padding-left: $container-gutter-desktop-wide;
+    padding-right: $container-gutter-desktop-wide;
+    max-width: $page-narrow;
+  }
+}
+
+@mixin container-post {
+  flex-grow: 1;
+  margin: 0 auto;
+
+  @include screen(smallPhone) {
+    max-width: $page-width + $container-gutter-mobile-small;
+    padding-left: $container-gutter-mobile-small;
+    padding-right: $container-gutter-mobile-small;
+  }
+  @include screen(phone) {
+    max-width: $page-width + $container-gutter-mobile * 2;
+    padding-left: $container-gutter-mobile;
+    padding-right: $container-gutter-mobile;
+  }
+  @include screen(tablet) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+    max-width: $page-width + $container-gutter-tablet * 2;
+  }
+  @include screen(desktop) {
+    padding-left: $container-gutter-desktop;
+    padding-right: $container-gutter-desktop;
+    max-width: $page-post;
+  }
+  @include screen(desktopWide) {
+    padding-left: $container-gutter-desktop-wide;
+    padding-right: $container-gutter-desktop-wide;
+    max-width: $page-post;
+  }
+}
+
+@mixin container-bleed {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

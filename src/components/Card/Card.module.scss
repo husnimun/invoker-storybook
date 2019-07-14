@@ -1,0 +1,33 @@
+@import 'src/tokens';
+
+.root {
+  background: $light-alpha-100;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.06);
+  transition: all 0.36s;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    transition: all 0.28s;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.small {
+  padding: $space-inset-s;
+}
+
+.smedium {
+  padding: $space-inset-sm;
+}
+
+.medium {
+  padding: $space-inset-m;
+}
+
+.mlarge {
+  padding: $space-inset-ml;
+}
+
+.large {
+  padding: $space-inset-l;
+}

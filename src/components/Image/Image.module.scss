@@ -1,0 +1,39 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.scaledImage {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.contain {
+  composes: scaledImage;
+  background-size: contain;
+}
+
+.cover {
+  composes: scaledImage;
+  background-size: cover;
+}
+
+.children {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,148 @@
+@import 'src/tokens';
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $light-alpha-100;
+}
+
+.loader {
+  animation: rotate 1.2s infinite;
+  position: relative;
+  border-radius: 9999px;
+  background: #767676;
+  box-shadow: 0px 0px 0px 9px #767676;
+}
+
+.small {
+  width: 16px;
+  height: 16px;
+}
+
+.medium {
+  height: 24px;
+  width: 24px;
+}
+
+.medium::after,
+.medium::before {
+  width: 6px;
+  height: 6px;
+}
+
+.loader::before,
+.loader::after {
+  border-radius: 50%;
+  content: '';
+  display: block;
+}
+
+.small::before,
+.small::after {
+  width: 4px;
+  height: 4px;
+}
+
+.loader::before {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+
+.medium::before {
+  left: calc(50% - 3px);
+  box-shadow: -9px 9px 0px 0px #ffffff;
+}
+
+.small::before {
+  left: calc(50% - 2px);
+  box-shadow: -6px 6px 0px 0px #ffffff;
+}
+
+.loader::after {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 3px);
+  box-shadow: 9px -9px 0px 0px #ffffff;
+}
+
+.medium::after {
+  left: calc(50% - 3px);
+  box-shadow: 9px -9px 0px 0px #ffffff;
+}
+
+.small::after {
+  left: calc(50% - 2px);
+  box-shadow: 6px -6px 0px 0px #ffffff;
+}
+
+.loader:before {
+  // animation: ball1 1.2s infinite;
+  background-color: #ffffff;
+}
+.loader:after {
+  // animation: ball2 1.2s infinite;
+  background-color: #ffffff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+// @keyframes ball1 {
+//   0% {
+//     transform: scale(0.8);
+//     box-shadow: none;
+//   }
+//   45% {
+//     box-shadow: 0px 0px 0px 0px $brand-secondary-80;
+//   }
+//   50% {
+//     transform: scale(1.4);
+//   }
+//   55% {
+//     box-shadow: 0px 0px 0px 8px $brand-secondary-10;
+//   }
+//   100% {
+//     transform: scale(0.8);
+//     box-shadow: none;
+//   }
+// }
+
+// @keyframes ball2 {
+//   0% {
+//     transform: scale(1.4);
+//   }
+//   5% {
+//     box-shadow: 0px 0px 0px 8px $brand-primary-20;
+//   }
+//   45% {
+//     box-shadow: none;
+//   }
+//   50% {
+//     transform: scale(0.8);
+//   }
+//   55% {
+//     box-shadow: none;
+//   }
+//   85% {
+//     box-shadow: 0px 0px 0px 0px $brand-primary-80;
+//   }
+//   100% {
+//     transform: scale(1.4);
+//   }
+// }

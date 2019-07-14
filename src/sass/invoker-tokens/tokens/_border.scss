@@ -1,0 +1,23 @@
+/*
+  Border tokens
+*/
+
+$solid-1                  : 1px solid;
+$solid-2                  : 2px solid;
+$solid-3                  : 3px solid;
+
+$border-color-default     : $dark-alpha-20;
+$border-color-primary     : $brand-primary-200;
+$border-color-secondary   : $brand-secondary-200;
+
+$solid-default            : $solid-1 $border-color-default;
+$solid-primary            : $solid-1 $border-color-primary;
+$solid-secondary          : $solid-1 $border-color-secondary;
+
+$dashed-1                 : 1px dashed;
+$dashed-2                 : 2px dashed;
+$dashed-3                 : 3px dashed;
+
+$dashed-default           : $dashed-1 $border-color-default;
+$dashed-primary           : $dashed-1 $border-color-primary;
+$dashed-secondary         : $dashed-1 $border-color-secondary;

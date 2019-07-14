@@ -1,0 +1,12 @@
+@import 'src/tokens';
+
+.root {
+  padding: $space-inset-ml;
+  margin: $space-stack-l;
+  border-radius: 8px !important;
+  // box-shadow: 0px 24px 40px -20px $dark-alpha-60;
+}
+
+.font {
+  font-family: 'Roboto Mono', monospace !important;
+}

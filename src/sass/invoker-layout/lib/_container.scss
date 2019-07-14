@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include screen(phone) {
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include screen(tabPortrait) {
+    max-width: 100%;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+  }
+
+  @include screen(tabLandscape) {
+    max-width: 100%;
+  }
+
+  @include screen(desktop) {
+    max-width: 100%;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+  }
+
+  @include screen(desktopWide) {
+    max-width: 100%;
+    padding-right: 144px !important;
+    padding-left: 144px !important;
+  }
+
+}
+
+.container-narrow {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include screen(phone) {
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include screen(tabPortrait) {
+    max-width: 100%;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+  }
+
+  @include screen(tabLandscape) {
+    max-width: 100%;
+  }
+
+  @include screen(desktop) {
+    max-width: 1080px;
+  }
+
+  @include screen(desktopWide) {
+    max-width: 1032px;
+  }
+
+}
+
+.container-bleed {
+  width: 100%;
+}

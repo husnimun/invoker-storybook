@@ -1,0 +1,86 @@
+@import 'src/tokens';
+
+.root {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  @include screen(phone) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  @include screen(tabPortrait) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  @include screen(tabLandscape) {
+    flex-direction: row;
+    padding: $space-inset-ll;
+    justify-content: space-between;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+    padding: $space-inset-ll;
+    justify-content: space-between;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+    padding: $space-inset-ll;
+    justify-content: space-between;
+  }
+}
+
+.title,
+.cancel {
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: unset;
+  }
+  @include screen(desktop) {
+    display: unset;
+  }
+  @include screen(desktopWide) {
+    display: unset;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+.save {
+  @include screen(phone) {
+    width: 100%;
+    margin-right: 0;
+  }
+  @include screen(tabPortrait) {
+    width: 100%;
+    margin-right: 0;
+  }
+  @include screen(tabLandscape) {
+    width: unset;
+    margin: $space-inline-sm;
+  }
+  @include screen(desktop) {
+    width: unset;
+    margin: $space-inline-sm;
+  }
+  @include screen(desktopWide) {
+    width: unset;
+    margin: $space-inline-sm;
+  }
+}
+
+.headerTitle {
+  color: $light-alpha-100;
+}
+
+.headerSubtitle {
+  color: $light-alpha-80;
+}

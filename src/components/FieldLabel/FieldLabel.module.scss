@@ -1,0 +1,27 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  // width: fit-content;
+}
+
+.secondaryLabel {
+  margin-left: $space-xs;
+  font-weight: 400;
+}
+
+.tertiaryLabel {
+  float: right;
+}
+
+.stack {
+  display: block;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: fit-content;
+  margin: $space-inline-sm;
+}

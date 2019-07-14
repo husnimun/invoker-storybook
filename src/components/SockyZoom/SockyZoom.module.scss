@@ -1,0 +1,10 @@
+@import 'src/tokens';
+
+.root {
+  margin: $space-stack-ll;
+}
+
+.overlay {
+  color: $light-alpha-100;
+  margin: $space-stack-sm;
+}

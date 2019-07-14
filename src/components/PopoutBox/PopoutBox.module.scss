@@ -1,0 +1,11 @@
+@import 'src/tokens';
+
+.root {
+  background: $brand-primary-200;
+  padding: $space-inset-ml;
+  transition: all 0.28s;
+  position: absolute;
+  transform: translateY(12px);
+  will-change: transform;
+  z-index: 999999;
+}

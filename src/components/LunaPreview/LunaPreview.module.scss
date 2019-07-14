@@ -1,0 +1,18 @@
+@import 'src/tokens';
+
+.root {
+  width: 200px;
+  height: 200px;
+}
+
+.delete {
+  padding: $space-inset-sm;
+  background: red;
+  color: #fff;
+}
+
+.imagePreview {
+  height: 300px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}

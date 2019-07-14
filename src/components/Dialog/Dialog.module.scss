@@ -1,0 +1,30 @@
+@import 'src/tokens';
+
+.root {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.dark {
+  background: $dark-hex-90;
+  color: $light-alpha-100;
+}
+
+.light {
+  background-color: $light-alpha-100;
+  color: $dark-alpha-70;
+}

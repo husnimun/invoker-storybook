@@ -1,0 +1,35 @@
+@mixin hoverOut($bg, $name) {
+  @keyframes #{$name} {
+    0% {
+      background-position: right center;
+      background-size: 100% 100%;
+      text-shadow: textshadow($bg);
+    }
+    99%{
+      text-shadow: textshadow($bg);
+    }
+    100% {
+    background-position: right center;
+      background-size: 0% 100%;
+      text-shadow: none;
+    }
+  }
+}
+
+@mixin hoverIn($bg, $name) {
+  @keyframes #{$name} {
+    0% {
+      background-position: left center;
+      background-size: 0% 100%;
+      text-shadow: textshadow($bg);
+    }
+    99% {
+      background-size: 99% 100%;
+      text-shadow: textshadow($bg);
+    }
+    100% {
+      background-size: 100% 100%;
+      text-shadow: textshadow($bg);
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@function textshadow($bg){
+  @return 2px 0 $bg, -2px 0 $bg, 0 2px $bg, 0 -2px $bg, 2px 0 $bg, -2px 0 $bg, 2px 0 $bg, -2px 0 $bg, 2px 0 $bg, -2px 0 $bg, 2px 0 $bg, -2px 0 $bg
+};

@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+  composes: container-bleed from global;
+  overflow: hidden;
+}
+
+.wrapper {
+  composes: row from global;
+  flex-wrap: nowrap;
+  transition: all 0.4s cubic-bezier(0.8, 0, 0.2, 1);
+}

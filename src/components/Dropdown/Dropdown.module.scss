@@ -1,0 +1,55 @@
+@import 'src/tokens';
+
+.root {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.arrowContainer {
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 8px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  fill: $dark-alpha-50;
+  pointer-events: none;
+  user-select: none;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid $dark-alpha-20;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  appearance: none;
+  background: $light-alpha-100;
+
+  &:focus,
+  &:active {
+    border-color: $brand-primary-200;
+    appearance: none;
+    outline: none;
+    transition: all 0.28s;
+  }
+}
+
+.small {
+  composes: field;
+  padding: 8px 11px;
+  font-size: $heading-6;
+  line-height: 18px;
+}
+
+.normal {
+  composes: field;
+  padding: 11px 40px 11px 11px;
+  font-size: $heading-5;
+  line-height: 24px;
+}

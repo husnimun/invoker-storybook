@@ -1,0 +1,79 @@
+@import 'src/tokens';
+
+.root {
+  @include screen(smallPhone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(tablet) {
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+  }
+  @include screen(tabletLandscape) {
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+  }
+  @include screen(desktop) {
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-huge;
+    padding-bottom: $space-huge;
+  }
+}
+
+.xs {
+  padding-top: $space-xs;
+  padding-bottom: $space-xs;
+}
+
+.s {
+  padding-top: $space-s;
+  padding-bottom: $space-s;
+}
+
+
+.sm {
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+}
+
+.m {
+  padding-top: $space-m;
+  padding-bottom: $space-m;
+}
+
+.ml {
+  padding-top: $space-ml;
+  padding-bottom: $space-ml;
+}
+
+.l {
+  padding-top: $space-l;
+  padding-bottom: $space-l;
+}
+
+.ll {
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+}
+
+.xl {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+}
+
+.xxl {
+  padding-top: $space-xxl;
+  padding-bottom: $space-xxl;
+}
+
+.huge {
+  padding-top: $space-huge;
+  padding-bottom: $space-huge;
+}

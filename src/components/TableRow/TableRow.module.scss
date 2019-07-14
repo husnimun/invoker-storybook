@@ -1,0 +1,35 @@
+@import 'src/tokens';
+
+.root {
+}
+
+.tableRow {
+  width: 100%;
+}
+
+.tableCell {
+  padding: $space-inset-sm;
+  text-align: left;
+  vertical-align: top;
+}
+
+.primary {
+  font-weight: 600;
+}
+
+.code {
+  vertical-align: top;
+  font-family: 'Roboto Mono', 'Fira Code', 'Operator Mono' !important;
+}
+
+.required {
+  vertical-align: middle;
+  opacity: 0.72;
+}
+
+.help {
+  margin-top: $space-ml;
+  margin-bottom: $space-sm;
+  display: block;
+  color: $dark-alpha-60;
+}

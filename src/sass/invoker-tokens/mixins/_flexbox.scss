@@ -1,0 +1,22 @@
+// Flexbox
+
+// flex-direction
+@mixin boxRow { flex-direction: row; }
+@mixin boxRowReverse { flex-direction: row-reverse; }
+@mixin boxColumn { flex-direction: column; }
+@mixin boxColumnReverse { flex-direction: column-reverse; }
+
+// justify-content
+@mixin justifyStart { justify-content: flex-start; }
+@mixin justifyEnd { justify-content: flex-end; }
+@mixin justifyCenter { justify-content: center; }
+@mixin justifyBetween { justify-content: space-between; }
+@mixin justifyAround { justify-content: space-around; }
+@mixin justifyEvenly { justify-content: space-evenly; }
+
+// align-items
+@mixin alignStart { align-items: flex-start; }
+@mixin alignEnd { align-items: flex-end; }
+@mixin alignCenter { align-items: center; }
+@mixin alignStretch { align-items: stretch; }
+@mixin alignBaseline { align-items: baseline; }

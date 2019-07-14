@@ -1,0 +1,45 @@
+@import 'src/tokens';
+
+.root {
+  background: $brand-primary-200;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $space-vertical-sm;
+  composes: container-bleed from global;
+  z-index: $layer-top;
+}
+
+.container {
+  composes: container-bleed from global;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  justify-content: flex-start;
+  margin: $space-horizontal-ml;
+}
+
+.logo {
+  max-height: 20px;
+  margin: $space-inline-sm;
+}
+
+.name {
+  color: $light-alpha-100 !important;
+}
+
+.github {
+  margin: $space-horizontal-ml;
+}
+
+.githubLink {
+  height: fit-content;
+  display: inherit;
+}

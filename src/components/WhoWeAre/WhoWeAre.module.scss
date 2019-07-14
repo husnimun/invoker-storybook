@@ -1,0 +1,21 @@
+@import 'src/tokens';
+
+.root {
+  padding-top: $space-huge;
+  padding-bottom: $space-huge;
+}
+
+.heading {
+  display: block;
+  margin-bottom: $space-ml;
+  color: $dark-alpha-60;
+}
+
+.content {
+  max-width: 480px;
+
+  &:not(:last-child) {
+    margin-bottom: $space-sm;
+  }
+}
+

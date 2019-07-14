@@ -1,0 +1,8 @@
+@import 'src/tokens';
+
+.root {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: $space-inset-ml;
+  background: $light-alpha-100;
+  border-radius: 3px;
+}

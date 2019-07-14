@@ -1,0 +1,40 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  padding-top: $space-sm;
+  padding-bottom: $space-sm;
+  padding-left: $space-ml;
+  padding-right: $space-s;
+  min-height: 52px;
+
+  @include screen(phone) {
+    display: unset;
+  }
+  @include screen(tabPortrait) {
+    display: unset;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.title {
+  color: $light-alpha-100;
+}
+
+.subtitle {
+  color: $light-alpha-80;
+}
+
+.close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}

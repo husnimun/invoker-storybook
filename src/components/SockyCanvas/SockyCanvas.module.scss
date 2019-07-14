@@ -1,0 +1,61 @@
+@import 'src/tokens';
+
+.root {
+  @include screen(phone) {
+    flex: 1;
+    width: 100%;
+    min-width: 100%;
+    height: 50%;
+  }
+  @include screen(tabPortrait) {
+    flex: 1;
+    width: 100%;
+    min-width: 100%;
+    height: 50%;
+  }
+  @include screen(tabLandscape) {
+    flex: unset;
+    width: 55%;
+    min-width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: $space-ll;
+    padding-right: $space-ll;
+    padding-bottom: $space-ll;
+  }
+  @include screen(desktop) {
+    flex: unset;
+    width: 55%;
+    min-width: 55%;
+    height: 100%;
+  }
+  @include screen(desktopWide) {
+    flex: unset;
+    width: 55%;
+    min-width: 55%;
+    height: 100%;
+  }
+}
+
+.canvas {
+  // position: relative;
+  height: 100%;
+  width: 100%;
+  @include screen(phone) {
+    max-height: 50vh;
+  }
+  @include screen(tabPortrait) {
+    max-height: 50vh;
+  }
+  @include screen(tabLandscape) {
+    max-height: 100%;
+  }
+  @include screen(desktop) {
+    max-height: 100%;
+  }
+  @include screen(desktopWide) {
+    max-height: 100%;
+  }
+}

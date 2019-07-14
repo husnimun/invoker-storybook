@@ -1,0 +1,26 @@
+@import 'src/tokens';
+
+.root {
+  position: absolute;
+  border-radius: $radius-l;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.lightBackground {
+  background: $dark-alpha-30;
+}
+
+.light {
+  background: $brand-primary-200;
+}
+
+.dark {
+  background: $light-alpha-100;
+}
+
+.darkBackground {
+  background: rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@invoker/style-tokens",
+  "version": "1.0.0",
+  "description": "Tokens variables, mixins, and functions for use in components development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tokens",
+    "sass",
+    "variables",
+    "design",
+    "system",
+    "mixins",
+    "invoker",
+    "meridian.id",
+    "vasilenka"
+  ],
+  "author": "Ongki 'vasilenka' Herlambang",
+  "license": "ISC"
+}

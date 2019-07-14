@@ -1,0 +1,56 @@
+@import 'src/tokens';
+
+.root {
+  display: flex;
+}
+.inline {
+  display: inline-flex;
+}
+
+.row {
+  @include boxRow;
+}
+.rowReverse {
+  @include boxRowReverse;
+}
+.column {
+  @include boxColumn;
+}
+.columnReverse {
+  @include boxColumnReverse;
+}
+
+.alignStart {
+  @include alignStart;
+}
+.alignCenter {
+  @include alignCenter;
+}
+.alignEnd {
+  @include alignEnd;
+}
+.alignBaseline {
+  @include alignBaseline;
+}
+.alignStretch {
+  @include alignStretch;
+}
+
+.justifyStart {
+  @include justifyStart;
+}
+.justifyCenter {
+  @include justifyCenter;
+}
+.justifyEnd {
+  @include justifyEnd;
+}
+.justifyAround {
+  @include justifyAround;
+}
+.justifyBetween {
+  @include justifyBetween;
+}
+.justifyEvenly {
+  @include justifyEvenly;
+}

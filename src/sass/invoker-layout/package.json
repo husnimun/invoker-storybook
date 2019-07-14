@@ -1,0 +1,25 @@
+{
+  "name": "@invoker/style-layout",
+  "version": "1.0.0",
+  "description": "container, row, and columns to design page layout",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grid",
+    "container",
+    "row",
+    "column",
+    "layout",
+    "composition",
+    "vasilenka",
+    "invoker",
+    "meridian.id"
+  ],
+  "author": "Ongki 'vasilenka' Herlambang",
+  "license": "ISC"
+}

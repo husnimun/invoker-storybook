@@ -1,0 +1,15 @@
+@import 'src/tokens';
+
+.root {
+  cursor: pointer;
+  padding: $space-inset-m;
+  transition: all 0.28s;
+}
+
+.light {
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transition: all 0.28s;
+  }
+}
