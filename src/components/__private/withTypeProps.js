@@ -76,9 +76,6 @@ const parseBooleanType = props => {
 const withVariationsProps = OriginalComponent => {
   const DecoratedComponent = props => {
     const typeProp = parseBooleanType(props);
-    console.log(typeProp)
-    console.log(props)
-    console.log(omit(props, types))
 
     const newProps = {
       ...omit(props, types),
