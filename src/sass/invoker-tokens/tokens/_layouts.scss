@@ -20,6 +20,15 @@ $page-narrow: 1080px;
 $page-post: 700px;
 $page-limit: $page-width + ($container-gutter-desktop * 2);
 
+// Vertical scaling values.
+// remove this map to disable vertical scaling
+// value 1 = height breakpoint, value 2 = multiplier
+$scale: (
+  (920px, 0.975),
+  (800px, 0.95),
+  (690px, 0.925),
+);
+
 // Custom break point (Min)
 $min-1800: 1800px;
 $min-1440: 1440px;

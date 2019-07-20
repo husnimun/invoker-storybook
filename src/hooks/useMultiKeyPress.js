@@ -28,4 +28,4 @@ const useMultiKeyPress = () => {
   return keysPressed;
 };
 
-export default useMultiKeyPress;
+export { useMultiKeyPress };

@@ -6,19 +6,19 @@
 
 // Display Text
 .display1 {
-  font-size: $display-1;
+  @include rf($display-2, $display-1);
   line-height: $line-reset;
   letter-spacing: -1.44px;
   font-weight: 800;
 }
 .display2 {
-  font-size: $display-2;
+  @include rf($display-3, $display-2);
   line-height: $line-reset;
   letter-spacing: -1.628px;
   font-weight: 800;
 }
 .display3 {
-  font-size: $display-3;
+  @include rf(56px, $display-3);
   line-height: $line-reset;
   font-weight: $bold;
   letter-spacing: -1.44px;
@@ -28,21 +28,21 @@
 // Heading Text
 .heading1 {
   composes: root;
-  font-size: $heading-1;
+  @include rf($heading-2, $heading-1);
   line-height: 52px;
   letter-spacing: -1.44px;
   font-weight: $bold;
 }
 .heading2 {
   composes: root;
-  font-size: $heading-2;
+  @include rf($heading-3, $heading-2);
   line-height: 36px;
   letter-spacing: -1.2px;
   font-weight: $bold;
 }
 .heading3 {
   composes: root;
-  font-size: $heading-3;
+  @include rf(20px, $heading-3);
   line-height: 30px;
   letter-spacing: -0.8px;
   font-weight: $bold;

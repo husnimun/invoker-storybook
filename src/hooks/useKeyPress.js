@@ -31,4 +31,4 @@ const useKeyPress = targetKey => {
   return keyPressed;
 };
 
-export default useKeyPress;
+export { useKeyPress };

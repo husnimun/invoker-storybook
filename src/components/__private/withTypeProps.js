@@ -85,7 +85,7 @@ const withVariationsProps = OriginalComponent => {
     return <OriginalComponent {...newProps} />;
   };
 
-  DecoratedComponent.propTypes = {...OriginalComponent.propTypes};
+  DecoratedComponent.propTypes = TypePropTypes;
 
   DecoratedComponent.displayName = OriginalComponent.displayName;
 

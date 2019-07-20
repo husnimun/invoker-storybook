@@ -1,0 +1,9 @@
+{
+  "name": "template-web",
+  "version": "1.0.0",
+  "description": "src folder for all web project starter",
+  "main": "index.js",
+  "repository": "git@github.com:meridianid/template-web.git",
+  "author": "Ongki Herlambang <meepomodeon@gmail.com>",
+  "license": "MIT"
+}

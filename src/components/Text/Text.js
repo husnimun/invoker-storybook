@@ -1,6 +1,5 @@
 import styles from './Text.module.scss';
 import React from 'react';
-import { bool, node, object, string, oneOf, oneOfType } from 'prop-types'
 
 import classnames from 'classnames';
 
@@ -14,7 +13,7 @@ import stylesStrong from '../Strong/Strong.module.scss';
 import stylesRegular from '../Regular/Regular.module.scss';
 import stylesLight from '../Light/Light.module.scss';
 
-import withTextProps, { sizes } from '../__private/withTextProps';
+import withTextProps from '../__private/withTextProps';
 
 export const Text = ({
   left,

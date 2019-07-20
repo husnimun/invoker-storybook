@@ -1,3 +1,4 @@
-export { default as useLockBodyScroll } from './useLockBodyScroll';
-export { default as useKeyPress } from './useKeyPress';
-export { default as useMultiKeyPress } from './useMultiKeyPress';
+export { useLockBodyScroll } from './useLockBodyScroll';
+export { useKeyPress } from './useKeyPress';
+export { useMultiKeyPress } from './useMultiKeyPress';
+export { useMediaQuery } from './useMediaQuery';
