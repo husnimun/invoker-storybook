@@ -4,11 +4,9 @@ import { configure, addParameters } from "@storybook/react";
 import { addDecorator } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
-import { themes } from "@storybook/theming";
 import invokerStorybook from "./invokerStorybook";
 
-addDecorator(withKnobs);
-addDecorator(withInfo);
+import { TableComponent } from "../src/labs/TableComponent/TableComponent";
 
 addParameters({
   options: {
@@ -48,5 +46,12 @@ function loadStories() {
 }
 
 addDecorator(Story => <Story />);
+
+addDecorator(withKnobs);
+addDecorator(
+  withInfo({
+    TableComponent
+  })
+);
 
 configure(loadStories, module);
